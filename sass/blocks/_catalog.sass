@@ -1,0 +1,179 @@
+.catalog
+    padding-bottom: 103px
+    &_title
+        color: #0D0D0D
+        text-align: center
+        font-size: 30px
+        font-style: normal
+        font-weight: 400
+        line-height: 45px
+        text-transform: uppercase
+.catalog_tabs
+    margin-top: 70px
+    list-style-type: none
+    display: flex
+    justify-content: center
+    margin-bottom: 0
+    padding-left: 0
+    &_li
+        width: 222px
+        height: 52px
+        border: 2px solid #d0d0d0
+        color: #6B6B6B
+        display: flex
+        justify-content: center
+        align-items: center
+        font-size: 18px
+        font-style: normal
+        font-weight: 400
+        line-height: 18px
+        text-transform: uppercase
+        transform: skewX(-25deg)
+        margin: 0 5px
+        transition: 0.5s all
+        cursor: pointer
+        &:hover
+            box-shadow: 3px 3px 20px red
+            border: none
+        div
+            transform: skewX(25deg)
+        &_active
+            color: #fff
+            background-color: red
+            border: none
+.catalog_content
+    margin-top: 60px
+    display: none
+    justify-content: space-between
+    flex-wrap: wrap
+    &_active
+        display: flex
+.catalog_item
+    width: 303px
+    height: 442px
+    border: 2px solid #e8e8e8
+    border-radius: 10px
+    background: #fff
+    padding: 20px 20px 26px 20px
+    overflow: hidden
+    margin-bottom: 20px
+    &_img
+        width: 140px
+        height: 200px
+        display: block
+        margin: 0 auto
+    &_title
+        color: #0D0D0D
+        text-align: center
+        font-size: 16px
+        font-style: normal
+        font-weight: 700
+        line-height: normal
+        margin-bottom: 0
+        padding-top: 15px
+    &_text
+        color: #0D0D0D
+        text-align: center
+        font-size: 14px
+        font-style: normal
+        font-weight: 700
+        line-height: normal
+        margin-bottom: 0
+        padding-top: 15px
+    &_id
+        color: #C70101
+        font-size: 14px
+        display: block
+        text-align: center
+        font-style: normal
+        font-weight: 500
+        line-height: 14px
+        text-decoration-line: underline
+        cursor: pointer
+        padding-top: 10px
+    &_line
+        width: 263px
+        height: 1px
+        background: #E8E8E8
+        margin-top: 17px
+    &_wrapper
+        display: flex
+        width: calc(200% + 40px)
+    &_content
+        width: 50%
+        margin-right: 0
+        transform: translateX(-100%)
+        transition: 0.5s all
+        &_active
+            transform: translateX(0%)
+            margin-right: 20px
+    &_list
+        width: 50%
+        margin-left: 20px
+        transform: translateX(0%)
+        padding-right: 20px
+        padding-left: 19px
+        transition: 0.5s all
+        padding-bottom: 0
+        list-style-type: none
+        &_active
+            transform: translateX(-100%)
+            margin-left: 0
+        li
+            position: relative
+            margin-top: 5px
+            color: #555
+            font-size: 14px
+            font-style: normal
+            font-weight: 400
+            line-height: 21px
+            &:before
+                content: ''
+                position: absolute
+                width: 5px
+                height: 5px
+                background-color: red
+                left: -14px
+                top: 7px
+.catalog_item_block_price
+    display: flex
+    justify-content: space-between
+    padding-top: 20px
+.catalog_item_list
+    margin-bottom: 0
+    &_id
+        position: absolute
+        color: #C70101
+        font-size: 14px
+        font-style: normal
+        font-weight: 500
+        line-height: 14px
+        text-decoration-line: underline
+        cursor: pointer
+        bottom: 0
+        left: 50%
+        transform: translateX(calc(-50% - 19px))
+.catalog_item_price
+    &_first
+        margin-bottom: 0
+        color: #555
+        font-size: 14px
+        font-style: normal
+        font-weight: 400
+        line-height: 14px
+        text-decoration-line: strikethrough
+    &_second
+        color: #050505
+        font-size: 20px
+        font-style: normal
+        font-weight: 700
+        line-height: 20px
+    span
+        text-decoration: line-through
+        margin-bottom: 0
+        color: #555
+        font-size: 14px
+        font-style: normal
+        font-weight: 400
+        line-height: 14px
+        text-decoration-line: strikethrough
